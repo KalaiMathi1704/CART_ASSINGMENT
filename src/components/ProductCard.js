@@ -5,7 +5,7 @@ function ProductCard({product, addToCart}) {
     return (
         <div className="card">
             {/* product image */}
-            <img src={product.image} />
+            <img src={product.image} alt={product.title} />
             
             {/* product title */}
             <h4>{product.title}</h4>

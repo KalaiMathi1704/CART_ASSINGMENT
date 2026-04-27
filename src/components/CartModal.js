@@ -14,7 +14,7 @@ function CartModal({cart, closeModal, removeFromCart}) {
 
             {cart.map((item) => (
                 <div key={item.id} className="cart-item">
-                    <img src = {item.image} />
+                    <img src={item.image} alt={item.title} />
                     <p>{item.title}</p>
                       <p>{item.price}</p>
                     <button onClick={() => removeFromCart(item.id)} className="btn-remove-cart-item">
